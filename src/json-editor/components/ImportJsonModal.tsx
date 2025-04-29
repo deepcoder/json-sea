@@ -124,7 +124,7 @@ const _ImportJsonModal = ({ isModalOpen, closeModal }: Props) => {
     setPyDiverError(null);
 
     try {
-      const response = await fetch(`/api/pydiver/${pyDiverIdValue}`);
+      const response = await fetch(`https://ecm.earthdiver.com/api/pydiver/${pyDiverIdValue}`);
 
       if (!response.ok) {
         throw new Error(`Failed to fetch document: ${response.statusText}`);
