@@ -1,8 +1,8 @@
 'use client';
 
-import { NextUIProvider } from '@nextui-org/system';
-import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
-import { ThemeProvider as NextThemesProvider } from 'next-themes';
+import {NextUIProvider} from '@nextui-org/system';
+import {QueryClient, QueryClientProvider} from '@tanstack/react-query';
+import {ThemeProvider as NextThemesProvider} from 'next-themes';
 
 type Props = {
   children: React.ReactNode;
@@ -13,7 +13,7 @@ const queryClient = new QueryClient({
     queries: {
       refetchOnWindowFocus: false,
       retry: false,
-      staleTime: 1000 * 20, // 20 seoncds
+      staleTime: 1000 * 20, // 20 seconds
       gcTime: 1000 * 60 * 5, //  5 minutes
     },
   },
