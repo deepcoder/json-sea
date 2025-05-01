@@ -129,7 +129,8 @@ const _PyDiverImportModal = ({isModalOpen, closeModal}: Props) => {
                 const formattedData: string = formatJsonLikeData(data);
 
                 if (isValidJson(formattedData)) {
-                    setStringifiedJson(formattedData);
+                    // Pass the MongoDB option when setting the JSON
+                    setStringifiedJson(formattedData, {isMongoData: true});
                     resetSelectedNode();
                     closeModal();
                 } else {
@@ -182,7 +183,8 @@ const _PyDiverImportModal = ({isModalOpen, closeModal}: Props) => {
                 const formattedData: string = formatJsonLikeData(allDocuments);
 
                 if (isValidJson(formattedData)) {
-                    setStringifiedJson(formattedData);
+                    // Pass the MongoDB option when setting the JSON
+                    setStringifiedJson(formattedData, {isMongoData: true});
                     resetSelectedNode();
                     closeModal();
                 } else {
