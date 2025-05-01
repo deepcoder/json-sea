@@ -1,4 +1,4 @@
-import { tuple } from '../../utils/function.util';
+import {tuple} from '../../utils/function.util';
 
 export const iconNames = tuple(
   'file-plus',
@@ -7,6 +7,7 @@ export const iconNames = tuple(
   'left-arrow-with-bar',
   'right-arrow-with-bar',
   'download',
+    'snake',
   'cloud-upload',
   'camera',
   'sun',
