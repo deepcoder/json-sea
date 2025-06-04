@@ -1,9 +1,9 @@
-%%
+```
 git clone
 docker build --no-cache -t json-sea .
 docker run -p 3000:3000 json-sea
 http://192.168.2.42:3000/
-%%
+```
 
 
 # JSON Sea
